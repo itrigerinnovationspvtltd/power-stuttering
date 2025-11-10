@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gradient-to-b from-gray-50 via-white to-gray-100 py-28"
+      className="bg-linear-to-b from-gray-50 via-white to-gray-100 py-20 sm:py-32"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 gap-16">
         {/* Left Section */}
@@ -86,13 +86,13 @@ const About = () => {
 </div>
 
 
-
+<a href="https://powerstuttering.com/1-google-ads-scq-free-training1">
          <button
   className="mt-6 bg-red-600 hover:bg-red-700 text-white font-semibold text-base sm:text-lg px-6 py-3 rounded-md transition duration-300"
 >
   Watch the FREE Training Video Now &gt;&gt;
 </button>
-
+</a>
         </motion.div>
 
         {/* Right Section */}
@@ -103,7 +103,7 @@ const About = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-200 group">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-200 group -mt-44">
             <img
               src={about}
               alt="Mark Power - Board Certified Stuttering Specialist"

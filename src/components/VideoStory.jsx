@@ -15,7 +15,7 @@ const VideoStory = () => {
       </div>
 
       {/* Section 1 - Video Left / Text Right */}
-      <div className="container mx-auto px-6 grid md:grid-cols-2 items-center gap-10 sm:gap-0 mb-10">
+      <div className="container mx-auto px-6 grid md:grid-cols-2 items-center gap-10 sm:gap-0 mb-10 sm:px-20">
         {/* Video */}
         <div className="flex justify-center md:justify-start">
           <div
@@ -34,7 +34,7 @@ const VideoStory = () => {
         </div>
 
         {/* Text Content */}
-        <div>
+        <div className="sm:pr-20">
           <h3 className="text-2xl sm:text-4xl font-bold sm:font-extrabold text-red-600 mb-3">
            Conor's Story  
           </h3>
@@ -45,7 +45,7 @@ const VideoStory = () => {
       </div>
 
       {/* Section 2 - Text Left / Video Right */}
-      <div className="container mx-auto px-6 grid md:grid-cols-2 items-center gap-10 sm:gap-0">
+      <div className="container mx-auto px-6 grid md:grid-cols-2 items-center gap-10 sm:gap-0 sm:px-20">
         {/* Text Content */}
         <div>
           <h3 className="text-2xl sm:text-4xl font-bold sm:font-extrabold text-red-600 mb-3">
@@ -58,7 +58,7 @@ Now he presents international workshops to software organizations.
         </div>
 
         {/* Video */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end sm:pr-20">
           <div
             className="relative w-full max-w-[350px]"
             style={{ aspectRatio: "1 / 1" }}

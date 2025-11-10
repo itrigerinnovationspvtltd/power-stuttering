@@ -7,9 +7,8 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    // 💎 Premium Glassy Navbar
     <nav className="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center px-8 py-5">
+      <div className="container mx-auto flex justify-between items-center px-8 py-2">
         {/* Logo */}
         <div className="cursor-pointer">
           <img src={logo} alt="C.W Inspections" className="w-36" />
@@ -17,7 +16,7 @@ const Navbar = () => {
 
         {/* Hamburger Icon */}
         <div
-          className="sm:hidden text-4xl text-red-600 cursor-pointer"
+          className="sm:hidden text-4xl text-black cursor-pointer"
           onClick={toggleMenu}
         >
           {isOpen ? <FaTimes /> : <FaBars />}
@@ -101,7 +100,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="tel:225-803-8821"
+              href="tel:"
               onClick={toggleMenu}
               className="bg-red-600 hover:bg-red-700 rounded-xl py-2 px-6 text-white text-lg font-semibold"
             >

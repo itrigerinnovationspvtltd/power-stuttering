@@ -5,8 +5,8 @@ export default function Hero() {
   const particles = Array.from({ length: 12 });
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-start items-center bg-linear-to-b from-[#f9f9fb] via-[#fdf2f2] to-[#ffffff] text-gray-900 px-6 pt-32 pb-16 overflow-hidden">
-      {/* ✨ Floating darker particles */}
+    <section id="hero" className="relative min-h-screen flex flex-col justify-start items-center bg-linear-to-b from-[#f9f9fb] via-[#fdf2f2] to-[#ffffff] text-gray-900 px-6 pt-16 sm:pt-32 pb-16 overflow-hidden">
+      {/*  Floating darker particles */}
       <div className="absolute inset-0 z-1 pointer-events-none">
         {particles.map((_, i) => (
           <motion.div
@@ -44,7 +44,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-5xl md:text-7xl font-extrabold text-red-600 mb-6 tracking-tight"
+            className="text-5xl md:text-6xl font-bold text-red-600 mb-6 tracking-tight"
           >
             How To Stop Stuttering
           </motion.h1>
@@ -61,7 +61,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.a
-            href="#video"
+            href="https://powerstuttering.com/1-google-ads-scq-free-training1"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}

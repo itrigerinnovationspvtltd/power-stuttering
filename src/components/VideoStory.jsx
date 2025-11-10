@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const VideoStory = () => {
   return (
@@ -74,6 +75,24 @@ Now he presents international workshops to software organizations.
           </div>
         </div>
       </div>
+      {/* Pulsing Banner */}
+<div className="container mx-auto max-w-4xl px-6 sm:px-20 mt-10">
+  <motion.a
+    href="https://powerstuttering.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-red-600 text-white text-center text-lg sm:text-xl font-bold py-3 px-6 rounded-lg shadow-md"
+    animate={{ scale: [1, 1.05, 1] }}
+    transition={{
+      duration: 1.2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
+    whileHover={{ scale: 1.08 }}
+  >
+    Join the Free Summit Now &gt;&gt;
+  </motion.a>
+</div>
     </section>
   );
 };

@@ -5,7 +5,7 @@ export default function Hero() {
   const particles = Array.from({ length: 12 });
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-start items-center bg-linear-to-b from-[#f9f9fb] via-[#fdf2f2] to-[#ffffff] text-gray-900 px-6 pt-16 sm:pt-32 pb-16 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-start items-center bg-linear-to-b from-[#f9f9fb] via-[#fdf2f2] to-[#ffffff] text-gray-900 px-6 pt-4  pb-16 overflow-hidden">
       {/*  Floating darker particles */}
       <div className="absolute inset-0 z-1 pointer-events-none">
         {particles.map((_, i) => (

@@ -6,7 +6,7 @@ const VideoStory = () => {
     <section id="story" className="py-16 sm:py-32 bg-gray-50">
       {/* Main Heading */}
       <div className="text-center mb-12 px-4">
-        <h2 className="text-3xl sm:text-5xl font-bold text-red-600 mb-3">
+        <h2 className="text-3xl sm:text-5xl font-bold text-[#5986c2] mb-3">
           Inspiring Stuttering Success Stories
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
@@ -36,7 +36,7 @@ const VideoStory = () => {
 
         {/* Text Content */}
         <div className="sm:pr-20">
-          <h3 className="text-2xl sm:text-4xl font-bold sm:font-extrabold text-red-600 mb-3">
+          <h3 className="text-2xl sm:text-4xl font-bold sm:font-extrabold text-[#5986c2] mb-3">
            Conor's Story  
           </h3>
           <p className="text-gray-700 leading-relaxed text-base sm:text-xl">
@@ -49,7 +49,7 @@ const VideoStory = () => {
       <div className="container mx-auto px-6 grid md:grid-cols-2 items-center gap-10 sm:gap-0 sm:px-20">
         {/* Text Content */}
         <div>
-          <h3 className="text-2xl sm:text-4xl font-bold sm:font-extrabold text-red-600 mb-3">
+          <h3 className="text-2xl sm:text-4xl font-bold sm:font-extrabold text-[#5986c2] mb-3">
             David's Story  
           </h3>
           <p className="text-gray-700 leading-relaxed text-base sm:text-xl">
@@ -81,7 +81,7 @@ Now he presents international workshops to software organizations.
     href="https://powerstuttering.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="block bg-red-600 text-white text-center text-lg sm:text-xl font-bold py-3 px-6 rounded-lg shadow-md"
+    className="block bg-[#5986c2] text-white text-center text-lg sm:text-xl font-bold py-3 px-6 rounded-lg shadow-md"
     animate={{ scale: [1, 1.05, 1] }}
     transition={{
       duration: 1.2,

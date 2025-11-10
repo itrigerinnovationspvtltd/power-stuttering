@@ -5,7 +5,7 @@ export default function Hero() {
   const particles = Array.from({ length: 12 });
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-start items-center bg-linear-to-b from-[#f9f9fb] via-[#fdf2f2] to-[#ffffff] text-gray-900 px-6 pt-4  pb-16 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-start items-center bg-linear-to-b from-[#fcfcfd] via-[#ede7fc] to-[#bcbbfa] text-gray-900 px-6 pt-4  pb-16 overflow-hidden">
       {/*  Floating darker particles */}
       <div className="absolute inset-0 z-1 pointer-events-none">
         {particles.map((_, i) => (
@@ -14,7 +14,7 @@ export default function Hero() {
             className="absolute rounded-full"
             style={{
               background:
-                "radial-gradient(circle, rgba(255,60,60,0.6) 0%, rgba(255,255,255,0) 70%)",
+                "radial-gradient(circle, rgba(59,130,246,0.6) 0%, rgba(255,255,255,0) 70%)",
               width: Math.random() * 50 + 25 + "px",
               height: Math.random() * 50 + 25 + "px",
               top: Math.random() * 100 + "%",
@@ -44,7 +44,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-5xl md:text-6xl font-bold text-red-600 mb-6 tracking-tight"
+            className="text-5xl md:text-6xl font-bold text-[#5986c2] mb-4 tracking-tight"
           >
             How To Stop Stuttering
           </motion.h1>
@@ -53,10 +53,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-xl md:text-3xl font-medium mb-10 text-gray-700 leading-snug"
+            className="text-xl md:text-3xl font-medium mb-4 text-gray-700 leading-snug"
           >
             Say exactly what you want to say <br />
-            <span className="text-red-500 font-semibold">When</span> you want to say it <br />
+            <span className="text-#5986c2 font-semibold">When</span> you want to say it <br />
             <span className="italic text-gray-600">Anytime... Anywhere</span>
           </motion.p>
 
@@ -67,13 +67,23 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.5 }}
             whileHover={{
               scale: 1.05,
-              boxShadow: "0 0 25px rgba(239,68,68,0.6)",
+              boxShadow: "0 0 25px rgba(59,130,246,0.6)",
             }}
-            className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-[#5986c2] hover:bg-[#3873bf] text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-300"
           >
             Show Me The Video
             <ArrowRight className="w-6 h-6" />
           </motion.a>
+
+           {/* Added Image Below Button */}
+          <motion.img
+            src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/KEx3urzHcoy2L49zdhTc/media/68a4b94eeddaa34d9fee4279.png"
+            alt="Speaking confidently"
+            className="mt-4 rounded-lg shadow-md max-w-xs md:max-w-sm"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+          />
         </div>
 
         {/* Right Section */}
@@ -83,7 +93,7 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="flex-1 bg-white/70 backdrop-blur-md border border-red-100 shadow-md p-8 rounded-2xl"
         >
-          <h2 className="text-3xl sm:text-5xl font-bold text-red-600 mb-4 text-center">
+          <h2 className="text-3xl sm:text-5xl font-bold text-[#5986c2] mb-4 text-center">
             Watch This Free Video
           </h2>
           <p className="text-base md:text-xl text-black font-bold text-center mb-6">
@@ -101,7 +111,7 @@ export default function Hero() {
           </ul>
           <p className="mt-6 font-semibold text-gray-800 text-center text-lg">
             All Stuttering Treatment Is{" "}
-            <span className="text-red-600">NOW ONLINE</span>
+            <span className="text-[#5986c2]">NOW ONLINE</span>
           </p>
         </motion.div>
       </div>

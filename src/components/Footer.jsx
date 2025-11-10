@@ -7,7 +7,7 @@ const Footer = () => {
         © Power Stuttering |{" "}
         <a
           href="https://stuttering-therapy.com/wp-content/uploads/2016/09/privacy-policy.pdf"
-          className="text-red-600 hover:text-red-700 transition-colors duration-300"
+          className="text-[#5986c2] hover:text-[#3873bf] transition-colors duration-300"
         >
           Privacy Policy
         </a>

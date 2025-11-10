@@ -18,7 +18,7 @@ const About = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-            About <span className="text-red-600">Me</span>
+            About <span className="text-[#5986c2]">Me</span>
           </h2>
 
           <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
@@ -43,7 +43,7 @@ const About = () => {
             Fluency</strong>. I limit my stuttering therapy practice to treating only teens and adults who stutter.
           </p>
 
-          <div className="bg-white/70 border-l-4 border-red-600 px-5 py-4 rounded-lg shadow-sm mb-6">
+          <div className="bg-white/70 border-l-4 border-[#5986c2] px-5 py-4 rounded-lg shadow-sm mb-6">
             <p className="text-gray-800 text-base sm:text-lg italic font-semibold">
               “This is what I LIVE AND BREATHE. Let me help you today!”
             </p>
@@ -51,10 +51,10 @@ const About = () => {
 
 <div className="text-gray-800 text-base sm:text-lg leading-relaxed text-left">
   {/* Teenagers Section */}
-  <h3 className="text-red-600 font-bold text-xl mb-2">1. Teenagers</h3>
+  <h3 className="text-[#5986c2] font-bold text-xl mb-2">1. Teenagers</h3>
   <ul className="space-y-3">
     <li className="flex items-start gap-2">
-      <span className="text-red-600 text-xl font-bold mt-1">✓</span>
+      <span className="text-[#5986c2] text-xl font-bold mt-1">✓</span>
       <p>
         Are you a teenager who stutters or hesitates when you speak? If you have repetitions in your speech 
         or find yourself getting stuck on certain sounds, know that you are not alone. Stuttering can be a challenge 
@@ -62,7 +62,7 @@ const About = () => {
       </p>
     </li>
     <li className="flex items-start gap-2">
-      <span className="text-red-600 text-xl font-bold mt-1">✓</span>
+      <span className="text-[#5986c2] text-xl font-bold mt-1">✓</span>
       <p>
         The <strong>MPI-2 (Modifying Phonation Intervals)</strong> Stuttering Treatment Program is one of the most 
         researched, evidence-based treatments for teenagers and adults. My mission is to help restore your belief 
@@ -72,10 +72,10 @@ const About = () => {
   </ul>
 
   {/* Adults Section */}
-  <h3 className="text-red-600 font-bold text-xl mt-8 mb-2">2. Adults</h3>
+  <h3 className="text-[#5986c2] font-bold text-xl mt-8 mb-2">2. Adults</h3>
   <ul className="space-y-3">
     <li className="flex items-start gap-2">
-      <span className="text-red-600 text-xl font-bold mt-1">✓</span>
+      <span className="text-[#5986c2] text-xl font-bold mt-1">✓</span>
       <p>
         There are only a few research evidence-based stuttering treatment programs available to adults and teens. 
         During the <strong>MPI-2 (Modifying Phonation Intervals)</strong> Stuttering Treatment Program, 
@@ -88,7 +88,7 @@ const About = () => {
 
 <a href="https://powerstuttering.com/1-google-ads-scq-free-training1">
          <button
-  className="mt-6 bg-red-600 hover:bg-red-700 text-white font-semibold text-base sm:text-lg px-6 py-3 rounded-md transition duration-300"
+  className="mt-6 bg-[#5986c2] hover:bg-[#3873bf] text-white font-semibold text-base sm:text-lg px-6 py-3 rounded-md transition duration-300"
 >
   Watch the FREE Training Video Now &gt;&gt;
 </button>
@@ -111,7 +111,7 @@ const About = () => {
             />
           </div>
            {/*Text below the image */}
-          <div className="mt-6 text-center text-red-600 text-xl font-semibold space-y-1">
+          <div className="mt-6 text-center text-[#5986c2] text-xl font-semibold space-y-1">
             <p>Mark Power, M.A. CCC BCS-F</p>
             <p>Board Certified Stuttering Specialist</p>
             <p>Power Stuttering Therapy</p>

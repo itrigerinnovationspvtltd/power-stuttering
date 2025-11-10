@@ -27,7 +27,7 @@ const Navbar = () => {
           <li>
             <a
               href="#hero"
-              className="hover:text-red-600 transition-colors duration-200"
+              className="hover:text-[#5986c2] transition-colors duration-200"
             >
               Home
             </a>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="hover:text-red-600 transition-colors duration-200"
+              className="hover:text-[#5986c2] transition-colors duration-200"
             >
               About
             </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <li>
             <a
               href="#story"
-              className="hover:text-red-600 transition-colors duration-200"
+              className="hover:text-[#5986c2] transition-colors duration-200"
             >
               Success Stories
             </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <li>
             <a
               href="#testimonial"
-              className="hover:text-red-600 transition-colors duration-200"
+              className="hover:text-[#5986c2] transition-colors duration-200"
             >
               Customer Reviews
             </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
         {/* Call Us Button */}
         <a
           href="tel:"
-          className="hidden sm:block bg-red-600 hover:bg-red-700 rounded-xl py-3 px-8 text-white text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
+          className="hidden sm:block bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-3 px-8 text-white text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
         >
           Call Us
         </a>
@@ -75,17 +75,17 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center py-5 space-y-5 text-gray-800 text-lg font-semibold border-t border-gray-200">
           <li>
-            <a href="#home" onClick={toggleMenu} className="hover:text-red-600">
+            <a href="#home" onClick={toggleMenu} className="hover:text-[#5986c2]">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" onClick={toggleMenu} className="hover:text-red-600">
+            <a href="#about" onClick={toggleMenu} className="hover:text-[#5986c2]">
               About
             </a>
           </li>
           <li>
-            <a href="#story" onClick={toggleMenu} className="hover:text-red-600">
+            <a href="#story" onClick={toggleMenu} className="hover:text-[#5986c2]">
               Success Stories
             </a>
           </li>
@@ -93,7 +93,7 @@ const Navbar = () => {
             <a
               href="#testimonial"
               onClick={toggleMenu}
-              className="hover:text-red-600"
+              className="hover:text-[#5986c2]"
             >
               Customer Reviews
             </a>
@@ -102,7 +102,7 @@ const Navbar = () => {
             <a
               href="tel:"
               onClick={toggleMenu}
-              className="bg-red-600 hover:bg-red-700 rounded-xl py-2 px-6 text-white text-lg font-semibold"
+              className="bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-2 px-6 text-white text-lg font-semibold"
             >
               Call Us
             </a>

@@ -48,13 +48,13 @@ const Testimonials = () => {
   return (
     <section
       id="testimonial"
-      className="bg-gradient-to-b from-[#e6f0ff] via-[#f5f8ff] to-white py-20 sm:py-28 px-6"
+      className="bg-linear-to-b from-[#e6f0ff] via-[#f5f8ff] to-white py-20 sm:py-28 px-6"
     >
       {/* Heading */}
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-5xl font-bold text-red-600 inline-block relative">
+        <h2 className="text-3xl sm:text-5xl font-bold text-[#5986c2] inline-block relative">
           What Our Clients Say
-          <span className="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-24 h-1 bg-red-600 rounded-full"></span>
+          <span className="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-24 h-1 bg-[#5986c2] rounded-full"></span>
         </h2>
       </div>
 
@@ -77,7 +77,7 @@ const Testimonials = () => {
                   {item.name}
                 </h3>
                 <div className="flex items-center text-xs sm:text-sm text-gray-500">
-                  <FaCheckCircle className="text-red-500 mr-1" />
+                  <FaCheckCircle className="text-[#5986c2] mr-1" />
                   <span>Verified Review • {item.date}</span>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const Testimonials = () => {
                 <FaStar
                   key={i}
                   className={`${
-                    i < item.rating ? "text-red-500" : "text-gray-300"
+                    i < item.rating ? "text-[#5986c2]" : "text-gray-300"
                   } text-lg`}
                 />
               ))}

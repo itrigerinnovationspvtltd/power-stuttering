@@ -103,7 +103,7 @@ const About = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-200 group -mt-44">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-200 group sm:-mt-44">
             <img
               src={about}
               alt="Mark Power - Board Certified Stuttering Specialist"

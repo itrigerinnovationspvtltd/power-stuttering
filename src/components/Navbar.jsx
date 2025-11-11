@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center px-8 py-2">
+      <div className="container mx-auto flex justify-between items-center px-8 ">
         {/* Logo */}
         <div className="cursor-pointer">
-          <img src={logo} alt="C.W Inspections" className="w-36" />
+          <img src={logo} alt="C.W Inspections" className="w-28 sm:w-32" />
         </div>
 
         {/* Hamburger Icon */}
@@ -61,7 +61,7 @@ const Navbar = () => {
         {/* Call Us Button */}
         <a
           href="tel:"
-          className="hidden sm:block bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-3 px-8 text-white text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
+          className="hidden sm:block bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-2 px-6 text-white text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
         >
           Call Us
         </a>

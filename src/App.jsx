@@ -5,6 +5,7 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Testimonials from "./components/Testimonials"
 import VideoStory from "./components/VideoStory"
+import MovingNav from "./components/MovingNav"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <div>
         <Navbar/>
+        <MovingNav/>
         <FloatingButton/>
         <Hero/>
         <About/>

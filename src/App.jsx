@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar"
 import Testimonials from "./components/Testimonials"
 import VideoStory from "./components/VideoStory"
 import MovingNav from "./components/MovingNav"
+import FAQ from "./components/FAQ"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <About/>
         <VideoStory/>
         <Testimonials/>
+        <FAQ/>
         <Footer/>
       </div>
       

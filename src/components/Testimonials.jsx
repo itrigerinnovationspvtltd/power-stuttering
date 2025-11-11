@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar, FaCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const reviews = [
   {
@@ -50,20 +51,31 @@ const Testimonials = () => {
       id="testimonial"
       className="bg-linear-to-b from-[#e6f0ff] via-[#f5f8ff] to-white py-20 sm:py-28 px-6"
     >
-      {/* Heading */}
-      <div className="text-center mb-16">
+      {/* Heading with animation */}
+      <motion.div
+        className="text-center mb-16"
+        initial={{ opacity: 0, y: -100 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         <h2 className="text-3xl sm:text-5xl font-bold text-[#5986c2] inline-block relative">
           What Our Clients Say
           <span className="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-24 h-1 bg-[#5986c2] rounded-full"></span>
         </h2>
-      </div>
+      </motion.div>
 
       {/* Testimonials Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {reviews.map((item, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
+            className="bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
+            initial={{ opacity: 0, y: 50, scale: 0.95 }} 
+            whileInView={{ opacity: 1, y: 0, scale: 1 }} 
+            whileHover={{ y: -10, scale: 1.02, boxShadow: "0px 20px 40px rgba(0,0,0,0.15)" }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }} 
+            viewport={{ once: true }}
           >
             {/* Profile */}
             <div className="flex items-center border-b border-gray-100 pb-4 mb-4">
@@ -73,9 +85,7 @@ const Testimonials = () => {
                 className="w-14 h-14 rounded-full object-cover mr-4"
               />
               <div>
-                <h3 className="font-semibold text-gray-900 text-lg">
-                  {item.name}
-                </h3>
+                <h3 className="font-semibold text-gray-900 text-lg">{item.name}</h3>
                 <div className="flex items-center text-xs sm:text-sm text-gray-500">
                   <FaCheckCircle className="text-[#5986c2] mr-1" />
                   <span>Verified Review • {item.date}</span>
@@ -88,18 +98,14 @@ const Testimonials = () => {
               {[...Array(5)].map((_, i) => (
                 <FaStar
                   key={i}
-                  className={`${
-                    i < item.rating ? "text-[#5986c2]" : "text-gray-300"
-                  } text-lg`}
+                  className={`${i < item.rating ? "text-yellow-300" : "text-gray-300"} text-lg`}
                 />
               ))}
             </div>
 
             {/* Review */}
-            <p className="text-gray-700 text-base leading-relaxed">
-              {item.review}
-            </p>
-          </div>
+            <p className="text-gray-700 text-base leading-relaxed">{item.review}</p>
+          </motion.div>
         ))}
       </div>
     </section>

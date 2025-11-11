@@ -15,10 +15,10 @@ export default function Hero() {
       <div className="absolute inset-0 z-0"></div>
 
       {/* Main Content */}
-      <div className="z-20 flex flex-col md:flex-row items-center justify-center gap-16 sm:gap-32  text-center md:text-left sm:pt-10">
+      <div className="z-20 flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-48  text-center lg:text-left lg:pt-4">
         
         {/* Left Section — Heading & button */}
-        <div className="flex-1 bg-black/40 p-2 border border-gray-200 rounded-2xl sm:mt-48 ">
+        <div className="flex-1 bg-black/40 p-2 border border-gray-200 rounded-2xl lg:mt-72 lg:mr-48 ">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="flex-1 bg-black/60  border border-gray-200 shadow-md py-4 px-8 rounded-2xl text-gray-100 mt-20"
+          className="flex-1 bg-black/60  border border-gray-200 shadow-md py-4 px-8 rounded-2xl text-gray-100 mt-12"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-[#5986c2] mb-4 text-center">
             Watch This Free Video

@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden sm:flex space-x-12 text-gray-800 text-xl font-semibold tracking-wide">
+        <ul className="hidden sm:flex space-x-12 text-gray-800 sm:text-sm lg:text-xl font-semibold tracking-wide">
           <li>
             <a
               href="#hero"
@@ -61,7 +61,7 @@ const Navbar = () => {
         {/* Call Us Button */}
         <a
           href="tel:"
-          className="hidden sm:block bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-2 px-6 text-white text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
+          className="hidden lg:block bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-2 px-6 text-white text-base md:text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
         >
           Call Us
         </a>

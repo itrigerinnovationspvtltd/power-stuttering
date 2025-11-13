@@ -7,9 +7,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-linear-to-b from-gray-50 via-white to-gray-100 py-20 sm:py-32"
+      className=" bg-linear-to-b from-gray-50 via-white to-gray-100 py-20 sm:py-32"
     >
-      <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 gap-16">
+      <div className="max-w-7xl container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 gap-16">
         {/* Left Section */}
         <motion.div
           className="md:w-1/2 text-center md:text-left space-y-6"

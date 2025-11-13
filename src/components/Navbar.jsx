@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md shadow-md  top-0 z-50">
+    <nav className="bg-white/80 backdrop-blur-md shadow-lg  top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-8 ">
         {/* Logo */}
         <div className="cursor-pointer">

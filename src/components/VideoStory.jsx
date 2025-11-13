@@ -32,7 +32,7 @@ const stories = [
 
 const VideoStory = () => {
   return (
-    <section className=" py-10 sm:py-16 px-6 max-w-7xl mx-auto rounded-md">
+    <section id="story" className=" py-10 sm:py-16 px-6 max-w-7xl mx-auto rounded-md">
       <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-8">
         Success Stories
       </h2>

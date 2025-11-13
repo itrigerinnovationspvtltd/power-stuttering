@@ -8,6 +8,7 @@ import VideoStory from "./components/VideoStory"
 import MovingNav from "./components/MovingNav"
 import FAQ from "./components/FAQ"
 import HowWork from "./components/HowWork"
+import Home from "./components/Home"
 
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
   return (
     <>
       <div>
-        <Navbar/>
         <MovingNav/>
+        <Navbar/>
         <FloatingButton/>
-        <Hero/>
+        {/* <Hero/> */}
+        <Home/>
         <About/>
         <HowWork/>
         <VideoStory/>

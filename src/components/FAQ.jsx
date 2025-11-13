@@ -100,6 +100,7 @@ function FAQ() {
                   <button
                     onClick={() => toggleFAQ(globalIndex)}
                     className="flex justify-between items-center w-full text-left"
+                  
                   >
                     <span className="text-base md:text-xl font-semibold text-black">
                       {faq.question}

@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials"
 import VideoStory from "./components/VideoStory"
 import MovingNav from "./components/MovingNav"
 import FAQ from "./components/FAQ"
+import HowWork from "./components/HowWork"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <FloatingButton/>
         <Hero/>
         <About/>
+        <HowWork/>
         <VideoStory/>
         <Testimonials/>
         <FAQ/>

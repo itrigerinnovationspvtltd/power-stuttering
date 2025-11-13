@@ -45,32 +45,32 @@ const reviews = [
   },
 ];
 
+// Array of background colors for each card
+const bgColors = ["bg-purple-100", "bg-green-100", "bg-blue-100", "bg-yellow-100", "bg-pink-100"];
+
 const Testimonials = () => {
   return (
     <section
       id="testimonial"
-      className="bg-linear-to-b from-[#e6f0ff] via-[#f5f8ff] to-white py-20 sm:py-28 px-6"
+      className="py-10 sm:py-16 px-6 max-w-7xl mx-auto rounded-md"
     >
       {/* Heading with animation */}
-      <motion.div
-        className="text-center mb-16"
+      <motion.h2
+        className="text-4xl sm:text-5xl font-extrabold text-center text-gray-900 mb-8"
         initial={{ opacity: 0, y: -100 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl sm:text-5xl font-bold text-[#5986c2] inline-block relative">
-          What Our Clients Say
-          <span className="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-24 h-1 bg-[#5986c2] rounded-full"></span>
-        </h2>
-      </motion.div>
+       What Our Clients Say
+      </motion.h2>
 
       {/* Testimonials Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {reviews.map((item, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
+            className={`${bgColors[index % bgColors.length]} rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-shadow duration-300 p-6`}
             initial={{ opacity: 0, y: 50, scale: 0.95 }} 
             whileInView={{ opacity: 1, y: 0, scale: 1 }} 
             whileHover={{ y: -10, scale: 1.02, boxShadow: "0px 20px 40px rgba(0,0,0,0.15)" }}

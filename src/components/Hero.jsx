@@ -1,7 +1,11 @@
+
+import LeadForm from "./LeadForm";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useState } from "react";
 
 export default function Hero() {
+const [showForm, setShowForm] = useState(false);
   return (
     // Background image
     <section
@@ -40,8 +44,8 @@ export default function Hero() {
             <span className="italic text-gray-300">Anytime... Anywhere</span>
           </motion.p>
 
-          <motion.a
-            href="https://powerstuttering.com/1-google-ads-scq-free-training1"
+         <motion.button
+            onClick={() => setShowForm(true)}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
@@ -53,9 +57,22 @@ export default function Hero() {
           >
             Show Me The Video
             <ArrowRight className="w-6 h-6" />
-          </motion.a>
+          </motion.button>
+    
         </div>
-
+  {showForm && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl shadow-2xl w-[90%] max-w-3xl relative p-6">
+            <button
+              onClick={() => setShowForm(false)}
+              className="absolute top-3 right-4 text-gray-600 hover:text-black text-2xl font-bold"
+            >
+              ✕
+            </button>
+            <LeadForm />
+          </div>
+        </div>
+      )}
         {/* Right Section */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}

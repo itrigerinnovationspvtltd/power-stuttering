@@ -46,7 +46,7 @@ const reviews = [
 ];
 
 // Array of background colors for each card
-const bgColors = ["bg-purple-100", "bg-green-100", "bg-blue-100", "bg-yellow-100", "bg-pink-100"];
+const bgColors = ["bg-purple-50", "bg-green-50", "bg-blue-50", "bg-yellow-50", "bg-pink-50"];
 
 const Testimonials = () => {
   return (

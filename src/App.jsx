@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       <div>
-        <MovingNav/>
         <Navbar/>
+        <MovingNav/>
         <FloatingButton/>
         {/* <Hero/> */}
         <Home/>

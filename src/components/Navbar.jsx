@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md shadow-lg  top-0 z-50">
+    <nav className="fixed w-full bg-white/80 backdrop-blur-md shadow-lg top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-8 ">
         {/* Logo */}
         <div className="cursor-pointer">
@@ -56,15 +56,15 @@ const Navbar = () => {
               Customer Reviews
             </a>
           </li>
+          <li>
+            <a
+              href="#work"
+              className="hover:text-[#5986c2] transition-colors duration-200"
+            >
+              How It Works
+            </a>
+          </li>
         </ul>
-
-        {/* Call Us Button */}
-        <a
-          href="tel:"
-          className="hidden lg:block bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-2 px-6 text-white text-base md:text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
-        >
-          Call Us
-        </a>
       </div>
 
       {/* Mobile Menu */}
@@ -100,11 +100,11 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="tel:"
+              href="#work"
               onClick={toggleMenu}
-              className="bg-[#5986c2] hover:bg-[#3873bf] rounded-xl py-2 px-6 text-white text-lg font-semibold"
+              className="hover:text-[#5986c2]"
             >
-              Call Us
+              How It Works
             </a>
           </li>
         </ul>

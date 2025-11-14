@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const Home = () => {
   return (
-    <section className="bg-[#f9fafb] text-gray-900 min-h-[70vh] flex items-center justify-center px-6 py-5">
+    <section className="bg-white text-gray-900 min-h-[75vh] flex items-center justify-center px-6 py-5">
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-4">
         
         {/* Left Section (Image) */}
@@ -24,7 +24,7 @@ const Home = () => {
             />
             {/* Animated Colored Speech Bubbles */}
             <motion.div
-              className="absolute top-0 -left-4 w-16 h-16 bg-pink-400 rounded-full opacity-80"
+              className="absolute top-0 -left-4 w-20 h-20 bg-pink-400 rounded-full opacity-80"
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
             ></motion.div>
@@ -43,7 +43,7 @@ const Home = () => {
 
         {/* Right Section (Text) */}
         <motion.div
-          className="flex-1 text-center md:text-left"
+          className="flex-1 text-left md:text-left"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -119,10 +119,6 @@ const Home = () => {
             All Stuttering Treatment Is{" "}
             <span className="text-[#5986c2]">NOW ONLINE</span>
           </p>
-            <button className="inline-flex bg-[#5986c2] hover:bg-[#3873bf] text-white font-semibold px-6 py-3 rounded-lg transition mb-2 ">
-              Show me the Video
-              <ArrowRight className="w-6 h-6" />
-            </button>
           </motion.div>
       </div>
     </section>

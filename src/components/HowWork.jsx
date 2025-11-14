@@ -31,7 +31,7 @@ const phases = [
 
 const HowWork = () => {
   return (
-    <section className="py-10 sm:py-16 px-6 max-w-7xl mx-auto rounded-md">
+    <section id='work' className="py-10 sm:py-16 px-6 max-w-7xl mx-auto rounded-md">
       {/* Animated Heading */}
       <motion.h2
         className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-8"

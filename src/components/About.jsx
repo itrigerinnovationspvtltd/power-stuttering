@@ -5,7 +5,7 @@ import { CheckCircle, PlayCircle } from "lucide-react";
 
 const About = () => {
   return (
-    <section className="bg-white text-gray-900 py-20">
+    <section id="about" className="bg-white text-gray-900 py-20">
       {/* HERO SECTION */}
       <div className="max-w-5xl mx-auto text-center px-6">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">

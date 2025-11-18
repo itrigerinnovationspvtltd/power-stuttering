@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaStopwatch, FaRocket, FaCheckCircle, FaHandshake } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { ArrowRight } from "lucide-react";
 
 const phases = [
   {
@@ -79,6 +80,16 @@ const HowWork = () => {
           </motion.div>
         ))}
       </div>
+      <div>    
+      </div>
+      <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+             data-leadbox-popup="DtkbfCaSjGEFLgXDhwaJ6K" data-leadbox-domain="powerstuttering.lpages.co"
+            className="mt-4 px-8 py-3 rounded-full bg-blue-600 text-white text-lg font-semibold shadow-lg flex items-center gap-2 mx-auto md:mx-0"
+          >
+            Start Your Journey <ArrowRight />
+          </motion.button>
     </section>
   )
 }

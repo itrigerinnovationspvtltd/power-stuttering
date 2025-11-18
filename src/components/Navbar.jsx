@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
 import logo from "../assets/ps-logo.webp";
 
 const Navbar = () => {
@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-white/80 backdrop-blur-md shadow-lg top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center px-8 ">
+      <div className="px-8 sm:pr-52 container mx-auto flex justify-between sm:justify-around items-center  ">
         {/* Logo */}
         <div className="cursor-pointer">
-          <img src={logo} alt="C.W Inspections" className="w-28 sm:w-32" />
+          <img src={logo} alt="Power Stuttering" className="w-28 sm:w-32" />
         </div>
 
         {/* Hamburger Icon */}
@@ -64,7 +64,11 @@ const Navbar = () => {
               How It Works
             </a>
           </li>
+          {/* <li> <a href="tel:" className="sm:flex items-center gap-2 bg-[#5986c2] hover:bg-[#3873bf] text-white font-semibold 
+             py-2 px-4 rounded-full shadow-lg fixed top-4 right-4 z-60"><FaPhoneAlt/>Call Us</a></li> */}
         </ul>
+       
+          
       </div>
 
       {/* Mobile Menu */}
@@ -73,9 +77,9 @@ const Navbar = () => {
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <ul className="flex flex-col items-center py-5 space-y-5 text-gray-800 text-lg font-semibold border-t border-gray-200">
+        <ul className="flex flex-col px-5 py-5 space-y-5 text-gray-800 text-lg font-semibold border-t border-gray-200">
           <li>
-            <a href="#home" onClick={toggleMenu} className="hover:text-[#5986c2]">
+            <a href="#hero" onClick={toggleMenu} className="hover:text-[#5986c2]">
               Home
             </a>
           </li>
@@ -107,7 +111,11 @@ const Navbar = () => {
               How It Works
             </a>
           </li>
-        </ul>
+           {/* <li> <a href="tel:" className=" flex bg-[#5986c2] hover:bg-[#3873bf] text-white font-semibold px-2 py-1 gap-2 items-center
+              rounded-2xl "><FaPhoneAlt/>Call Us</a></li> */}
+          
+          </ul>
+         
       </div>
     </nav>
   );

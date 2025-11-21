@@ -85,10 +85,10 @@ const HowWork = () => {
       <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-             data-leadbox-popup="DtkbfCaSjGEFLgXDhwaJ6K" data-leadbox-domain="powerstuttering.lpages.co"
             className="mt-4 px-8 py-3 rounded-full bg-blue-600 text-white text-lg font-semibold shadow-lg flex items-center gap-2 mx-auto md:mx-0"
           >
-            Start Your Journey <ArrowRight />
+            <a href="https://powerstuttering.lpages.co/google-ads-video-hosting-page/" className="flex items-center gap-2">
+                        Start Your Journey <ArrowRight /></a>
           </motion.button>
     </section>
   )

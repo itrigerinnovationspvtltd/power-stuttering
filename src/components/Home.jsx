@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       id="hero"
-      className="relative h-[95vh] bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
+      className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       
@@ -23,8 +23,8 @@ const Home = () => {
       >
         {/* Right: Text */}
         <div className="md:w-2xl md:ml-auto md:pl-32">
-          <h1 className="text-3xl  md:text-5xl font-extrabold leading-tight mb-4 drop-shadow-lg">
-            Speak With Clarity & Confidence
+          <h1 className="text-3xl  md:text-5xl font-extrabold leading-tight mb-4 drop-shadow-lg md:pt-20">
+            Stuttering Treatment
           </h1>
 
           <p className="my-4 font-semibold text-lg drop-shadow-lg">
